@@ -1,0 +1,45 @@
+.SimilarVenues {
+    @include clearfix;
+
+    &--venue {
+        float: left;
+        width: 215px;
+        margin-right: 17px;
+
+    }
+    .SimilarVenues--venue:last-child {
+        margin-right: 0;
+    }
+
+    &--headline {
+        border-bottom: solid 1px #c1c1c1;
+    }
+    &--image {
+    }
+
+    &--name {
+        margin: 7px 0 0 0;
+        color: #333;
+        font-weight: 700;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0 ;
+        width: 100%;
+        display: inline-block;
+    }
+
+    &--city {
+        color: #666;
+        font-size: 14px;
+        font-weight: 300;
+        margin: 0;
+        line-height: 1;
+    }
+    &--price {
+        color: #666;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 2.4em;
+    }
+}

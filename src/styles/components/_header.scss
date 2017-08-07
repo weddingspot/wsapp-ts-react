@@ -1,0 +1,99 @@
+.Header {
+    @include clearfix;
+    padding: 0 25px;
+    background-color: #fff;
+    border-bottom: 1px solid #cac8c8;
+    box-shadow: 0 1px 3px #aaa;
+    position: relative;
+    &--logo {
+        display: block;
+        float: left;
+        > a {
+            display: block;
+            text-decoration: none;
+            &:active,
+            &:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            > img {
+                width: 159px;
+            }
+        }
+    }
+
+    &--nav {
+        @include clearfix;
+        float: left;
+        display: block;
+        padding: 20px 0;
+
+        &-link {
+            float: left;
+            padding: 0 15px;
+
+            // dropdown nav link
+            .fa-caret-down {
+                font-size: 12px;
+            }
+            &-separator {
+                float: left;
+                padding: 0;
+                width: 1px;
+                height: 24px;
+                display: inline-block;
+                vertical-align: middle;
+                opacity: .7;
+                background-color: #f0f0f0;
+            }
+
+            > a {
+                font-weight: 400;
+                font-size: 15px;
+                letter-spacing: 1.1px;
+                color: #000;
+                display: block;
+            }
+            &__muted {
+                > a {
+                    color: #9e9e9e;
+                }
+            }
+        }
+    }
+
+    &--dropdown {
+        @include clearfix;
+        display: none;
+        z-index: 10;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(255,255,255,0.94);
+        min-height: 200px;
+        width: 100%;
+        border-top: solid 1px #ccc;
+        padding: 30px 50px;
+
+        &__open {
+            display: block;
+        }
+    }
+
+    &--locations-nav {
+        margin: 0;
+        padding: 0;
+        float: left;
+        list-style: none;
+        width: 10%;
+        > li {
+            margin-bottom: 5px;
+            > a {
+                color: #00a0e0;
+                font-size: 14px;
+            }
+
+        }
+    }
+}

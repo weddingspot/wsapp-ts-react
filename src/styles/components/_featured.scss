@@ -1,0 +1,40 @@
+
+.Featured {
+    background-color: #9a4364;
+    height: 172px;
+
+    &--container {
+        @include clearfix;
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    &--headline {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 22px;
+        color: #fff;
+    }
+    &--items-table {
+        display: table;
+        border-collapse: separate;
+        width: 100%;
+        position: relative;
+    }
+    &--row {
+        display: table-row;
+    }
+    &--item {
+        display: table-cell;
+        padding: 10px;
+        text-align: center;
+        > a {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            > img {
+                max-height: 40px;
+            }
+        }
+    }
+}

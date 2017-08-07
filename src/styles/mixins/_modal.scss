@@ -1,0 +1,30 @@
+
+@mixin modal($width: 400px, $bodyClassName: 'Modal') {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 100;
+
+    .#{$bodyClassName}--body {
+        position: relative;
+        width: $width;
+        padding: 15px;
+        background-color: #fff;
+        margin: 100px auto;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 6px;
+        outline: 0;
+    }
+    .#{$bodyClassName}--close-link {
+        position: absolute;
+        text-decoration: none;
+        font-size: 18px;
+        top: 5px;
+        color: inherit;
+        right: 5px;
+    }
+}

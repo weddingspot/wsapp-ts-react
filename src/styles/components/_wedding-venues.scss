@@ -1,0 +1,95 @@
+.WeddingVenues {
+    position: relative;
+    min-height: 80vh;
+    &--container {
+        @include clearfix;
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    &--headline {
+        font-weight: 600;
+        color: #333;
+        font-size: 28px;
+        margin: 30px 0 10px 0;
+    }
+
+    &--results-count {
+        font-size: 14px;
+        margin: 0 0 10px;
+        color: #333;
+    }
+
+    &--top-nav {
+        @include clearfix;
+        border-top: solid 1px #ccc;
+        border-bottom: solid 1px #ccc;
+        padding: 10px 0;
+    }
+
+    &--list-toggler,
+    &--map-toggler {
+        color: inherit;
+        display: inline-block;
+        margin-left: 15px;
+        padding: 6px 12px;
+
+        &:hover {
+            color: #9a4364;
+        }
+    }
+    &--map-toggler {
+        padding-right: 0;
+    }
+
+    &--filters {
+        width: 260px;
+        float: left;
+        &-clear {
+            display: inline-block;
+            margin: 20px 0;
+            color: #9a4364;
+            font-weight: bold;
+        }
+        &-group {
+            border-top: solid 1px #ccc;
+            padding-bottom: 20px;
+            input {
+                margin-right: 5px;
+            }
+        }
+        &-headline {
+
+            > h2 {
+                margin: 0;
+                padding: 20px 0;
+                display: block;
+                text-decoration: none;
+                cursor: pointer;
+                text-transform: uppercase;
+                letter-spacing: .1em;
+                color: #333;
+                font-size: 14px;
+                > .fa {
+                }
+            }
+        }
+        &-subheadline {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        &-subgroup {
+            padding-left: 10px;
+        }
+    }
+
+    &--venues {
+        float: left;
+        width: 840px;
+        padding: 15px 0 15px 15px;
+
+        > .Venue {
+            margin-bottom: 20px;
+        }
+    }
+}

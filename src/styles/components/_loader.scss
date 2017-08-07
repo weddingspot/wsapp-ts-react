@@ -1,0 +1,24 @@
+
+.Loader {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(163, 81, 113, 0.66);;
+
+    &--svg {
+        margin: 20px auto 10px auto;
+        display: block;
+    }
+
+    &--text {
+        display: block;
+        width: 200px;
+        text-align: center;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,197 @@
+.VenueDetails{
+    position: relative;
+
+    &--loader {
+
+        &:before {
+            display: inline-block;
+            content: 'loadinfg ';
+            text-align: center;
+        }
+    }
+
+    &--container {
+        @include clearfix;
+        width: 1000px;
+        margin: 20px auto 0 auto;
+    }
+    &--main {
+        float: left;
+        width: 680px;
+    }
+
+
+    &--headline {
+        @include clearfix;
+    }
+
+    &--name {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        color: #666;
+        font-size: 28px;
+        font-weight: bold;
+
+    }
+    &--location {
+        display: inline-block;
+        margin: 0;
+        padding: 0 10px;
+
+        font-size: 15px;
+        color: #666;
+    }
+
+    &--report {
+        color: inherit;
+        display: inline-block;
+        padding: 10px 0;
+
+        &:hover {
+            color: inherit;
+        }
+    }
+
+    &--tabs-headline {
+        margin: 20px 0 0 0;
+        padding-bottom: 5px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &--tab-togglers {
+        padding: 10px 0;
+        border-top: solid 1px #c1c1c1;
+        border-bottom: solid 1px #c1c1c1;
+
+        > a {
+            display: inline-block;
+            padding: 0 10px;
+            color: #c1c1c1;
+            font-weight: 600;
+            font-size: 12px;
+            margin-right: 45px;
+            letter-spacing: 1.2px;
+            &:first-child {
+                padding-left: 5px;
+            }
+            &:hover,
+            &.active {
+                color: #9a4364;
+            }
+        }
+    }
+    &--tab {
+        display: none;
+        &__open {
+            display: block;
+        }
+        > h4 {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        > p {
+            margin-top: 0;
+        }
+    }
+
+    &--price-btn,
+    &--contact-btn {
+        display: inline-block;
+        text-align: center;
+        height: 50px;
+        line-height: 35px;
+        font-size: 18px;
+        padding: 8px 12px;
+        width: 260px;
+        border: solid 1px transparent;
+        &:hover {
+            color: inherit;
+        }
+    }
+    &--price-btn{
+        background-color: #9a4364;
+        color: #fff;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &--contact-btn {
+        border-color: #9a4364;
+        color: #9a4364;
+        &:hover {
+            color: #9a4364;
+            background-color: #fbfbfb;
+        }
+    }
+
+    &--aside {
+        float: left;
+        width: 1000px - 680px;
+        padding: 0 30px;
+
+        &-headline {
+            font-weight: bold;
+            color: #333;
+            font-size: 17px;
+            letter-spacing: .01em;
+            margin: 0;
+            margin-top: 40px;
+            border-bottom: solid 1px #333;
+        }
+
+        &-contacts {
+            font-weight: 300;
+            font-size: 18px;
+            padding: 10px 0;
+            border-bottom: solid 1px #333;
+        }
+    }
+
+    &--contact-link {
+        color: #9a4364;
+        font-size: 13px;
+        display: inline-block;
+        margin-right: 12px;
+        &:hover {
+            color: #9a4364;
+        }
+    }
+
+    &--property {
+        @include clearfix;
+        margin-bottom: 5px;
+    }
+
+    &--property-name {
+        float: left;
+        font-size: 13px;
+        width: 120px;
+    }
+
+    &--property-value {
+        float: right;
+        width: 140px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    &--map {
+        border: none;
+        max-width: 100%;
+        height: 260px;
+        &-wrapper {
+            padding: 10px 0;
+        }
+    }
+
+    &--contact {
+        &-headline {
+            margin: 0 0 20px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}

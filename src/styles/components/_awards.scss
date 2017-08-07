@@ -1,0 +1,56 @@
+.Awards {
+    background-color: #e5e6e6;
+    position: relative;
+    height: 93px;
+    margin-top: 25px;
+
+    &:before {
+        content: " ";
+        z-index: 1;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        right: 0;
+        bottom: 3px;
+        border-top: 4px solid #fff;
+        border-bottom: 4px solid #fff;
+    }
+
+    &--container {
+        @include clearfix;
+        width: 820px;
+        margin: 0 auto;
+        z-index: 3;
+        position: relative;
+    }
+    &--text {
+        display: inline-block;
+        padding: 22px 15px;
+        h4, h5 {
+            margin: 0;
+            padding: 0;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            color: #9a4364;
+        }
+
+        h5 {
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-style: oblique;
+            color: #444;
+        }
+    }
+    &--button-wrapper {
+        padding: 10px;
+    }
+    &--label-img {
+        position: relative;
+        margin-top: -20px;
+    }
+}

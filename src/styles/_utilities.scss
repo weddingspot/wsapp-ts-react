@@ -1,0 +1,76 @@
+
+
+// Floats
+// -------------------------
+
+.clearfix {
+  @include clearfix;
+}
+.center-block {
+  @include center-block;
+}
+.w-{
+    &100{
+        width: 100%;
+    }
+}
+.ta-center {
+    text-align: center;
+}
+
+.fl-r {
+  float: right !important;
+}
+.fl-l {
+  float: left !important;
+}
+
+.mt-{
+    &5 {
+        margin-top: 5px;
+    }
+    &10 {
+        margin-top: 10px;
+    }
+    &15 {
+        margin-top: 15px;
+    }
+    &20 {
+        margin-top: 20px;
+    }
+    &30 {
+        margin-top: 30px;
+    }
+    &40 {
+        margin-top: 40px;
+    }
+}
+
+.mr-{
+    &10 {
+        margin-right: 10px;
+    }
+    &15 {
+        margin-right: 15px;
+    }
+    &30 {
+        margin-right: 30px;
+    }
+}
+
+.mb-{
+  &10 {
+    margin-bottom: 10px;
+  }
+
+  &15 {
+    margin-bottom: 15px;
+  }
+}
+
+.ml-{
+    &10 {
+        margin-right: 10px;
+    }
+}
+

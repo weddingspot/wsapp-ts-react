@@ -1,0 +1,74 @@
+.Venue {
+    &--wrapper-link {
+        @include clearfix;
+        color: inherit;
+        display: block;
+        &:hover {
+            color: inherit;
+            box-shadow: 0 0 3px #ccc;
+        }
+    }
+    $iconPadding: 25px;
+    &--pic-wrapper {
+        float: left;
+    }
+
+    &--details {
+        float: left;
+        width: 475px;
+    }
+
+    &--headline {
+        @include clearfix;
+    }
+
+    &--icon {
+        float: left;
+        padding: 15px $iconPadding;
+    }
+
+    &--title {
+        float: left;
+        margin-top: 8px;
+        padding: 0;
+    }
+
+    &--name {
+        float: left;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &--location {
+        font-size: 15px;
+        color: #999;
+        margin: 0;
+    }
+
+    &--favorite-btn {
+        float: right;
+        margin: 10px;
+        color: #ccc;
+    }
+
+    &--description {
+        height: 75px;
+        overflow: hidden;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    &--meta-name {
+        width: 32px + $iconPadding * 2;
+        display: inline-block;
+        padding-left: 15px;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    &--meta-value {
+        font-size: 12px;
+        font-weight: 300;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}

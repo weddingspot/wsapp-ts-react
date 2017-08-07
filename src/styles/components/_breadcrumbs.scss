@@ -1,0 +1,38 @@
+.Breadcrumbs {
+    @include clearfix;
+    padding: 0 25px;
+    background-color: #aaa;
+    > ul {
+        @include clearfix;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        padding: 8px 0;
+        > li {
+            float: left;
+            &:after {
+                content: '/';
+                display: inline-block;
+                padding: 0 5px;
+                color: #ccc;
+            }
+            &:last-child:after {
+                display: none;
+            }
+            > a {
+                font-weight: 300;
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+    }
+    &--btn-link {
+        border-left: 2px solid #FFF;
+        display: inline-block;
+        padding: 8px 10px;
+        color: #fff;
+        &:hover {
+            color: #fff;
+        }
+    }
+}

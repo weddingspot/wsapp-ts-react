@@ -1,0 +1,109 @@
+.Footer {
+    background-image: url('../assets/img/footer/bg.png');
+
+    &--container {
+        @include clearfix;
+        width: 920px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    &--logo-wrapper {
+        text-align: center;
+    }
+    &--trademarks {
+        float: left;
+        width: 25%;
+        margin-top: 10px;
+
+        &-separator {
+            vertical-align: middle;
+            display: inline-block;
+            font-size: 25px;
+            color: #aaa;
+            margin: 7px 5px 0px 10px;
+        }
+    }
+
+    &--ws-logo {
+        display: inline-block;
+        vertical-align: middle;
+        > img {
+            width: 85px;
+        }
+    }
+
+    &--honeybook-logo {
+        display: inline-block;
+        margin-top: 5px;
+        vertical-align: middle;
+        > img {
+            width: 85px;
+        }
+    }
+
+    &--copyright {
+        display: block;
+        padding: 5px 0;
+        text-align: center;
+        font-size: 12px;
+        color: #666;
+    }
+    &--terms-links {
+        padding-top: 5px;
+        text-align: center;
+        > a {
+            display: inline-block;
+            color: #888;
+            font-size: 12px;
+
+            &:hover {
+                color: #9a4364;
+            }
+        }
+        &-separator {
+            color: #000;
+            display: inline-block;
+            padding: 0 5px;
+            vertical-align: middle;
+        }
+    }
+
+    &--socials-wrapper {
+        @include clearfix;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    &--social-link {
+        display: inline-block;;
+        > img {
+            width: 35px;
+        }
+    }
+    &--nav {
+        @include clearfix;
+        float: left;
+        width: 75%;
+
+        > ul {
+            width: 20%;
+            float: left;
+            list-style: none;
+            > li > a {
+                color: #888;
+                font-size: 12px;
+                line-height: 20px;
+                &:hover {
+                    color: #9a4364;
+                }
+            }
+        }
+
+        &-headline {
+            color: #666;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.Pagination {
+    @include clearfix;
+
+    &--next,
+    &--prev,
+    &--num {
+        float: left;
+        display: inline-block;
+        padding: 6px 12px;
+        color: #337ab7;
+
+        &:hover {
+            color: #23527c;
+            background-color: #eee;
+            border-color: #ddd;
+        }
+
+        &.active {
+            background-color: #9a4364;
+            color: #fff;
+        }
+    }
+}

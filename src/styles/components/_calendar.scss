@@ -1,0 +1,54 @@
+.Calendar {
+    $cellWidth: 350px / 7;
+    border: solid 1px #ccc;
+    &--controls {
+        padding: 4px;
+        background-color: #fff;
+        text-align: center;
+    }
+    &--btn
+    {
+        &-next,
+        &-prev {
+            border: none;
+            background-color: #fff;
+            &:focus {
+                outline: none;
+            }
+        }
+        &-next {
+            float: right;
+        }
+        &-prev {
+            float: left;
+        }
+    }
+
+    &--weekdays {
+        background-color: #f0f0f0;
+        > span {
+            display: inline-block;
+            width: $cellWidth;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+
+    &--days {
+        @include clearfix;
+    }
+
+    &--date {
+        display: inline-block;
+        float: left;
+        width: $cellWidth;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+            background-color: #f0f0f0;
+        }
+    }
+}
