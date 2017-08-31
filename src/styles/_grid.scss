@@ -82,4 +82,8 @@
     @include column;
     width: 80%;
   }
+  &-85 {
+    @include column;
+    width: 85%;
+  }
 }

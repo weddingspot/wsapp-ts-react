@@ -1,0 +1,8 @@
+.Error {
+    color: red;
+    &--block {
+        display: block;
+        padding: 15px;
+        border: solid 1px red;
+    }
+}

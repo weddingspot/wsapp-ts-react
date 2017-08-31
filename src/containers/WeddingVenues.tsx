@@ -7,7 +7,7 @@ import { VenuesListAction, loadVenuesList } from '../actions';
 import * as types from '../types';
 
 export interface Props extends types.WeddingVenuesState {
-    loadVenuesList: () => Promise<void>;
+    loadVenuesList: () => Promise<VenuesListAction>;
 }
 export interface State {
 

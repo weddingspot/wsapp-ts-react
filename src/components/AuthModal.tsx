@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link, Route } from 'react-router-dom';
-import SignInForm from './SignInForm';
+import SignInForm from '../containers/SignInForm';
 import RegisterForm from './RegisterForm';
 
 export interface Props {

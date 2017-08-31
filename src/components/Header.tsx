@@ -110,9 +110,11 @@ export function Header({isLoggedIn, isLocationsOpen, toggleLocations}: Props) {
                 <div className="Header--nav-link">
                     <Link to="/locations/">About</Link>
                 </div>
-                <div className="Header--nav-link">
-                    <Link to="/signin/">Sign In</Link>
-                </div>
+                {!isLoggedIn &&
+                    <div className="Header--nav-link">
+                        <Link to="/signin/">Sign In</Link>
+                    </div>
+                }
             </nav>
         </div>
     );

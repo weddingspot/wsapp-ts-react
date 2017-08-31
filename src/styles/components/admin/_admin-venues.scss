@@ -1,0 +1,25 @@
+.AdminVenues {
+    padding: 0 10px;
+
+    &--headline {
+        padding: 0;
+        margin: 0 0 15px 0;
+    }
+    &--list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        > li {
+            > a {
+                padding: 4px 7px;
+                border-bottom: solid 1px #ccc;
+                display: block;
+                color: inherit;
+                margin-bottom: 10px;
+                &:hover {
+                    border-color: blue;
+                }
+            }
+        }
+    }
+}

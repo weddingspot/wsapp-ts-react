@@ -35,6 +35,9 @@ const mapDispatchToProps = (dispatch: Dispatch<VenueDetailsAction>) => ({
 });
 
 class VenueDetailsContainer extends React.Component<Props, State> {
+    handleImageSubmit(data: {}) {
+        throw 'not implemented error';
+    }
     componentDidMount() {
         this.props.loadVenueDetails(this.props.venueId);
     }
@@ -57,7 +60,9 @@ class VenueDetailsContainer extends React.Component<Props, State> {
             );
         }
 
-        const mapUrl = 'https://maps.google.com/maps?q=' + {latitude} + ',' + {longtitude} + '&hl=es;z=14&output=embed';
+        const mapUrl = (
+            'https://maps.google.com/maps?q=' + {latitude} + ',' + {longtitude} + '&hl=es;z=14&output=embed'
+        );
 
         return (
             <VenueDetails

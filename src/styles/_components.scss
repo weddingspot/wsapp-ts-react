@@ -17,8 +17,10 @@
 @import 'components/text-area';
 @import 'components/label';
 @import 'components/text-input';
+@import 'components/file-input';
 @import 'components/calendar';
 @import 'components/loader';
+@import 'components/error';
 
 @import 'components/wedding-venues';
 @import 'components/venue';
@@ -33,3 +35,9 @@
 
 
 @import 'components/button';
+@import 'components/admin/cropper';
+
+@import 'components/admin/admin';
+@import 'components/admin/navigation';
+@import 'components/admin/venue-images';
+@import 'components/admin/admin-venues';
